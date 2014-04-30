@@ -33,6 +33,40 @@ This is a sample
       })
       
     });  
+    
+    /*
+    
+    Get user location from browser
+    
+    function getLocation()
+    {
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+      }
+      else {
+        x.innerHTML="Geolocation is not supported by this browser.";
+      }
+    }
+    function showPosition(position)
+    {
+      x.innerHTML="Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;	
+    }
+    */
+    /*
+      Get user info
+      
+      $.ajax({
+  type: "GET",
+  dataType: "jsonp",
+  url: "https://api.instagram.com/v1/users/25025320/?access_token=youraccesstoken",
+  success: function(data) {
+    $('.name').text(data.data.username);
+    $('.tagline').text(data.data.bio);
+  }
+});
+    
+    */
       
     </script>
   </body>
